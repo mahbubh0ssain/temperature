@@ -29,6 +29,11 @@
 
   <body>
     <div class="container">
+      <img
+        class="logo mx-auto d-flex w-25 mt-5"
+        src="https://camo.githubusercontent.com/fb8b72757a602dbcee0e2fe2a3c7db9f4963be0f2739bb9fe84ca598edbd5266/68747470733a2f2f6272616e64732e686f6d652d617373697374616e742e696f2f5f2f6f70656e776561746865726d61702f6c6f676f2e706e67"
+        alt="Weather Logo"
+      />
       <form class="col-md-6 m-auto py-5">
         <div class="input-group mb-3">
           <input
@@ -54,9 +59,10 @@
           alt=""
           id="weather-icon"
         />
+        <h1 class="lead" id="show-clouds"></h1>
         <h1 id="show-city-name"></h1>
         <h3><span id="temp-degree"></span>&deg;C</h3>
-        <h1 class="lead" id="show-clouds"></h1>
+        <h6 id="feels-like"></h6>
       </div>
     </div>
     <script src="JS/index.js"></script>

@@ -11,10 +11,12 @@ const searchTemperature = () => {
 
 const displayTemperature = (temperature) => {
   const displayCityName = document.getElementById("show-city-name");
-  displayCityName.innerText = temperature.name;
+  displayCityName.innerText = `${temperature.name},${temperature.sys.country}`;
 
   const displayTempInDegree = document.getElementById("temp-degree");
   displayTempInDegree.innerText = `${temperature.main.temp} `;
+  const feelsLike = document.getElementById("feels-like");
+  feelsLike.innerText = `Feels like: ${temperature.main.feels_like}`;
   console.log(temperature);
   const displayClouds = document.getElementById("show-clouds");
   displayClouds.innerText = temperature.weather[0].main;
